@@ -243,31 +243,30 @@ int main(){
 		struct note *p=head_position();
 		struct note *head=p;
 	
-		int nn=input_n();
+		n=input_n();
 		
-		while(nn!=6){
+		while(n!=6){
 	
-			switch(nn){
+			switch(n){
 				case 2:
 					list_print(head);//单链表的输出打印 
-					nn=input_n();
+					n=input_n();
 					break;
 				case 3:
 					list_new(head);//单链表的插入
-					nn=input_n();
+					n=input_n();
 					break;
 				case 4:
 					list_dele(head);//单链表的删除
-					nn=input_n();
+					n=input_n();
 					break;
 				case 5:
 					list_search(head);//单链表的查找
-					nn=input_n();
+					n=input_n();
 					break;
 				case 6:
 					list_delete(head);//单链表的销毁
 					printf("链表已销毁！");
-					nn=input_n();
 					break;
 			}
 		}

@@ -22,7 +22,7 @@ int input_n(){//选择模式
 //结构体定义 
 typedef int ElemType;//栈中元素的数据类型为int
 
-    //链栈节点定义
+    //链栈节点
     typedef struct StackNode{
         ElemType data;
         StackNode *next;
